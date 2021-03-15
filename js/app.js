@@ -5,11 +5,15 @@ app.config(['$routeProvider',
         $routeProvider
         .when('/home',{
             templateUrl : 'partials/home.html',
-            controller : 'homeCtrl'
+            controller : 'taskCtrl'
         })
         .when('/update',{
             templateUrl : 'partials/update.html',
-            controller : 'updateCtrl'
+            controller : 'taskCtrl'
+        })
+        .when('/add',{
+            templateUrl : 'partials/add.html',
+            controller : 'taskCtrl'
         })
         .otherwise({
             redirectTo: '/home'
