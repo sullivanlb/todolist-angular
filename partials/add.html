@@ -5,7 +5,8 @@
   <body>
       <div class="col s12 m6">
         <div class="card ">
-          <div class="card-content" ng-controller="saveCtrl">
+
+          <div class="card-content" ng-controller="addCtrl">
 
             <label>Ma nouvelle tâche</label> 
             <input type="text" ng-model="input_title">
@@ -18,18 +19,18 @@
                 <input type="time" class="datepicker" ng-model="input_time">
             </div>
 
-            <label>Contexte (faire une liste déroulante des contextes existants du coup)</label> 
+            <label>Contexte</label> 
             <input type="text" ng-model="input_context"> 
 
             <label>Description</label> 
             <textarea id="textarea2" class="materialize-textarea" data-length="2" ng-model="input_description"></textarea>
 
             <label>URL</label> 
-            <input type="url" ng-model="input_url"> 
+            <input type="text" ng-model="input_url"> 
 
             <a class="btn-floating fab waves-effect waves-light #ef6c00 orange darken-3" style="position: absolute;
             left: 24px; bottom: -20px;"><i class="material-icons">delete</i></a>
-            <a ng-click="save()" class="btn-floating halfway-fab waves-effect waves-light #ef6c00 orange darken-3"><i class="material-icons">save</i></a>
+            <a href="#!/home" ng-click="add()" class="btn-floating halfway-fab waves-effect waves-light #ef6c00 orange darken-3"><i class="material-icons">save</i></a>
           </div>
         </div>
       </div>
